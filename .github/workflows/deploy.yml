@@ -40,10 +40,10 @@ jobs:
       uses: actions/upload-pages-artifact@v3
       with:
         path: public
-deploy:
-  environment:
-    name: github-pages
-    url: ${{ steps.deployment.outputs.page_url }}
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     
     runs-on: ubuntu-latest
     needs: build
