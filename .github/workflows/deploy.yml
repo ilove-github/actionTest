@@ -2,7 +2,7 @@ name: Build and Deploy Text
 
 on:
   push:
-  branches: ["main"]
+    branches: ["main"]
     paths:
     - "message.txt"
 
